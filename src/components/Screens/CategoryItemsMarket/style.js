@@ -6,30 +6,32 @@ const styles = StyleSheet.create({
         backgroundColor:"#006830"
     },
     signInHeader:{
-        marginBottom:"20%",
-        justifyContent:'center',
-        alignItems:'center'
-    },
-    headerBox:{
-        justifyContent:'space-evenly',
-        alignItems:'center',
-        flexDirection:'row'
+        marginVertical:70,
+        width:'100%',
+        flexDirection:'row',
+        justifyContent:'space-between'
     },
     backButton:{
-        marginLeft:-30
+        paddingLeft:10,
+    },
+    userButton:{
+        paddingRight:15        
     },
     textBackButton:{
-        paddingLeft:22,
-        marginTop:50,
         color:"#FFF",
         fontSize:20,
-        alignSelf:"flex-start"
     },
     textUserName:{
-        paddingLeft:22,
-        marginTop:50,
         color:"#FFF",
-        fontSize:20
+        fontSize:18,
+    },
+    textUserMsg:{
+        color:"#FFF",
+        fontSize:16,
+    },
+        imgLogo:{
+        alignSelf:"center",
+        marginTop:-75
     },
         imgLogo:{
         marginTop:-75,

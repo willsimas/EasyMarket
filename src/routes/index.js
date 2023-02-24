@@ -3,7 +3,8 @@ import Home from '../components/Screens/Home';
 import SignIn from '../components/Screens/SignIn'
 import SignUp from '../components/Screens/SignUp'
 import Menu from '../components/Screens/Menu'
-import ItemsMarket from '../components/Screens/ItemsMarket';
+import CategoryItemsMarket from '../components/Screens/CategoryItemsMarket';
+import SignInForm from '../components/SignInForm';
 
 const Stack = createNativeStackNavigator();
 
@@ -31,8 +32,13 @@ export default function Routes() {
             options={{ headerShown: false}}
             />
             <Stack.Screen 
-            name="ItemsMarket"
-            component={ItemsMarket}
+            name="CategoryItemsMarket"
+            component={CategoryItemsMarket}
+            options={{ headerShown: false}}
+            />
+            <Stack.Screen 
+            name="SignInForm"
+            component={SignInForm}
             options={{ headerShown: false}}
             />
         </Stack.Navigator>

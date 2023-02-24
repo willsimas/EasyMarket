@@ -4,34 +4,30 @@ import styles from './style';
 import * as Animatable from 'react-native-animatable';
 import { useNavigation } from '@react-navigation/native';
 
+
 export default function Menu() {
   const navigation = useNavigation();
   return (
     
       <View style={styles.container}>
+
           <Animatable.View 
           style={styles.signInHeader}
           animation="fadeInDown"
           delay={500}
           >
-                <View style={styles.headerBox}>
-                  <Animatable.View
-                  animation="fadeInDown"
-                  style={styles.backButtonBox}>
-                  
-                  <TouchableOpacity style={styles.backButton}
-                  onPress={()=> navigation.navigate('SignIn')}
-                  >
-                  <Text style={styles.textBackButton}>Voltar</Text>
+
+                <TouchableOpacity style={styles.backButton}
+                onPress={()=> navigation.navigate('SignIn')}
+                >
+                <Text style={styles.textBackButton}>Voltar</Text>
+                </TouchableOpacity>
+
+                  <TouchableOpacity style={styles.userButton}>
+                    <Text style={styles.textUserMsg}> Olá</Text>
+                    <Text style={styles.textUserName}>Usuário!</Text>
                   </TouchableOpacity>
-                  </Animatable.View>
-                    <View style={styles.userButtonBox}>
-                    <TouchableOpacity style={styles.userButton}>
-                      <Text style={styles.textUserMsg}> Olá</Text>
-                      <Text style={styles.textUserName}>Usuário!</Text>
-                    </TouchableOpacity>
-                    </View>
-                </View>
+
           </Animatable.View>
           <Animatable.View 
           animation="fadeInUp"
@@ -48,12 +44,12 @@ export default function Menu() {
 
             <View style={styles.screensButtons}>
             <TouchableOpacity style={styles.itemsButton}
-                onPress={()=> navigation.navigate('ItemsMarket')}
+                onPress={()=> navigation.navigate('CategoryItemsMarket')}
                 >
                 <Image 
                 source={require('./itens.png')}
                 />
-                <Text style={styles.itemsTextButton}>Itens</Text>
+                <Text style={styles.itemsTextButton}>Categorias</Text>
                 </TouchableOpacity>
             </View>
 

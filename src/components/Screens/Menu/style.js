@@ -3,29 +3,19 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
     container:{
         flex:1,
-        backgroundColor:"#006830"
+        backgroundColor:"#006830",
     },
     signInHeader:{
-    },
-    headerBox:{
+        marginVertical:70,
+        width:'100%',
         flexDirection:'row',
-        alignItems:'center',
-        justifyContent:"space-between",
-        width:"100%",
-        marginVertical:50
-    },
-    backButtonBox:{
-        marginHorizontal:10
+        justifyContent:'space-between'
     },
     backButton:{
         paddingLeft:10,
     },
-    userButtonBox:{
-        marginHorizontal:10
-    },
     userButton:{
-        alignItems:'center',
-        justifyContent:'center'
+        paddingRight:15        
     },
     textBackButton:{
         color:"#FFF",
@@ -33,15 +23,15 @@ const styles = StyleSheet.create({
     },
     textUserName:{
         color:"#FFF",
-        fontSize:18
+        fontSize:18,
     },
     textUserMsg:{
         color:"#FFF",
-        fontSize:16
+        fontSize:16,
     },
         imgLogo:{
-        marginTop:-75,
-        alignSelf:"center"
+        alignSelf:"center",
+        marginTop:-75
     },
     formContainer:{
         flex:1,
