@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
         backgroundColor:"#006830"
     },
     signInHeader:{
-        marginVertical:70,
+        marginVertical:50,
         width:'100%',
         flexDirection:'row',
         justifyContent:'space-between'
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
     },
     itemsButton:{
         width:120,
-        height:120,
+        height:100,
         backgroundColor:"#006830",
         borderRadius:13,
         alignItems:'center',
@@ -75,7 +75,11 @@ const styles = StyleSheet.create({
     itemsTextButton:{
         color:"#FFF",
         marginTop:5
-    }
+    },
+    containerForm:{
+        backgroundColor:"#f3f3a2",
+        height:'100%'
+    },
 })
 
 export default styles

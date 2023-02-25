@@ -1,9 +1,9 @@
 import React from 'react';
-import { View, SafeAreaView, useState, Image, Text, TouchableOpacity } from 'react-native';
+import { View, Text } from 'react-native';
 import styles from './style';
 import * as Animatable from 'react-native-animatable';
-import { TextInput } from 'react-native-gesture-handler';
 import { useNavigation } from '@react-navigation/native';
+import SignUpForm from '../../SignUpForm';
 
 export default function SignUp() {
 
@@ -18,7 +18,6 @@ export default function SignUp() {
           delay={500}
 
           >
-            <Text></Text>
           </Animatable.View>
           
           <Animatable.View 
@@ -31,36 +30,7 @@ export default function SignUp() {
               style={styles.imgLogo}
               resizeMode="contain"
               />
-              <Text style={styles.title}>Login</Text>
-              <TextInput
-              placeholder='Digite seu nome de Login'
-              style={styles.input}/>
-
-              <Text style={styles.title}>Senha</Text>
-              <TextInput
-              placeholder='Digite sua Senha'
-              style={styles.input}/>
-              
-              <Text style={styles.title}>Confirme sua Senha</Text>
-              <TextInput
-              placeholder='Digite sua senha novamente'
-              style={styles.input}/>
-
-              <Text style={styles.title}>E-mail</Text>
-              <TextInput
-              placeholder='Digite seu E-mail'
-              style={styles.input}/>
-
-              <TouchableOpacity style={styles.button}
-              >
-                <Text style={styles.buttonText}>Entrar</Text>
-              </TouchableOpacity>
-
-              <TouchableOpacity style={styles.buttonRegister}
-              onPress={()=> navigation.navigate('SignIn')}
-              >
-                <Text style={styles.registerText}>Já possui uma conta?</Text>
-              </TouchableOpacity>
+              <SignUpForm />
 
             </Animatable.View>
           </View>

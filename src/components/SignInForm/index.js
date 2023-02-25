@@ -9,9 +9,9 @@ export default function SignInForm(){
     const navigation = useNavigation();
     return(
         <View>
-            <Text style={styles.title}>E-mail</Text>
+            <Text style={styles.title}>E-mail ou Login</Text>
             <TextInput
-            placeholder='Digite seu E-mail'
+            placeholder='Digite seu E-mail ou Login'
             style={styles.input}/>
 
             <Text style={styles.title}>Senha</Text>

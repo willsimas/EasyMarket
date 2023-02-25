@@ -1,20 +1,10 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-    container:{
-        flex:1,
-        backgroundColor:"#006830",
-    },
-    signInHeader:{
-        marginBottom:"35%",
-    },
-    imgLogo:{
-        marginTop:-65,
-        alignSelf:"center"
-    },
+    
     formContainer:{
         flex:1,
-        backgroundColor:"#FFF",
+        backgroundColor:"#D8E5C3",
         borderTopLeftRadius:25,
         borderTopRightRadius:25,
         paddingStart:"5%",
@@ -22,14 +12,12 @@ const styles = StyleSheet.create({
     },
     title:{
         fontSize:20,
-        marginTop:40,
-        color:'#121212'
     },
     input:{
         borderBottomWidth:1,
         height:40,
         marginBottom:12,
-        fontSize:16,
+        fontSize:16
     },
     button:{
         backgroundColor:"#006830",

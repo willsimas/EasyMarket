@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
     itemsButton:{
         width:120,
         height:120,
-        backgroundColor:"#006830",
+        backgroundColor:"#e70e02",
         borderRadius:13,
         alignItems:'center',
         justifyContent:'center',

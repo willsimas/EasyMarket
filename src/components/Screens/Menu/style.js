@@ -37,7 +37,11 @@ const styles = StyleSheet.create({
         flex:1,
         backgroundColor:"#D8E5C3",
         width:"100%",
-        height:"100%"
+        height:"100%",
+        borderTopLeftRadius:25,
+        borderTopRightRadius:25,
+        paddingStart:"5%",
+        paddingEnd:"5%",
     },
     containerBoxes:{
         height:"85%",
